@@ -13,36 +13,36 @@
     <script src='p_js/js.js'></script>
     <style media="screen">
         #icons a i:hover{
-          color: rgb(52,183,143);
+          color:rgba(0,0,0,0.7);
           transition: all .5s ease;
           -webkit-transition: all .5s ease;
           -moz-transition: all .5s ease;
         }
     </style>
     <script type="text/javascript">
-        // $(document).ready(function() {
-        //     $('#filters li span').click(function() {
-        //         // fetch the class of the clicked item
-        //         var ourClass = $(this).attr('class');
-        //         // reset the active class on all the buttons
-        //         $('#filters li').removeClass('active');
-        //         // update the active state on our clicked button
-        //         $(this).parent().addClass('active');
-        //         if (ourClass == 'all') {
-        //             // show all our items
-        //             $('#coverlist').children('div.cover').fadeIn("slow");
-        //         } else {
-        //             var listnum = $('#coverlist').children().length;
-        //             // // hide all elements that don't share ourClass
-        //             $('#coverlist').children().fadeOut("fast", function() {
-        //                 listnum = listnum - 1;
-        //                 if (listnum == 0) {
-        //                     $('#coverlist').children('div.' + ourClass).fadeIn("fast");
-        //                 }
-        //             });
-        //         }
-        //     });
-        // });
+        $(document).ready(function() {
+            $('#filters li span').click(function() {
+                // fetch the class of the clicked item
+                var ourClass = $(this).attr('class');
+                // reset the active class on all the buttons
+                $('#filters li').removeClass('active');
+                // update the active state on our clicked button
+                $(this).parent().addClass('active');
+                if (ourClass == 'all') {
+                    // show all our items
+                    $('#coverlist').children('div.cover').fadeIn("slow");
+                } else {
+                    var listnum = $('#coverlist').children().length;
+                    // // hide all elements that don't share ourClass
+                    $('#coverlist').children().fadeOut("fast", function() {
+                        listnum = listnum - 1;
+                        if (listnum == 0) {
+                            $('#coverlist').children('div.' + ourClass).fadeIn("fast");
+                        }
+                    });
+                }
+            });
+        });
     </script>
     <script type="text/javascript">
     </script>
@@ -93,36 +93,68 @@
         </ul>
     </div>
     <div class="blue" id="title">
-          <p class="me" style="text-align:center; margin-bottom:150px;margin-top:150px;"><img src="p_image/Major.png" alt="picture" /></p>
+          <p class="me" style="text-align:center; margin-bottom:150px;margin-top:150px;"><img src="p_image/May+Major.png" alt="picture" /></p>
     </div>
     <div>
         <section class="clearfix" id="portfolio">
             <ul id="filters">
                 <li class="active"><span class="all">ALL</span></li>
-                <li><span class="ux" id='ux'>RESEARCH</span></li>
-                <li><span class="ux" id='ux'>DESIGN</span></li>
-                <li><span class="make" id='make'>DEVELOP</span></li>
-                <li><span class="code" id='code'>ART</span></li>
+                <li><span class="research" id='research'>RESEARCH</span></li>
+                <li><span class="design" id='design'>DESIGN</span></li>
+                <li><span class="develop" id='develop'>DEVELOP</span></li>
+                <li><span class="art" id='art'>ART</span></li>
             </ul>
         </section>
         <div class="clearfix" id='coverlist' style="padding:0 12%; margin:0 auto;">
-          <div class="col-lg-4 col-md-6 cover ux">
+          <div class="col-lg-4 col-md-6 cover research design develop">
               <a href="pages/airc.html">
-                  <img src="p_image/p_cover/logo.gif" class="img-responsive" alt="" />
+                  <img src="p_image/p_cover/SHMetro.gif" class="img-responsive" alt="" />
                   <p class='cover_des'>
-                      <b>SHMetro VIS</b><br><br>#data visualization #city
+                      <b>SHMetro VIS</b><br><br>#D3.js #jQuery #Jupyter Notebook 
                   </p>
               </a>
           </div>
-            <div class="col-lg-4 col-md-6 cover ux">
-                <a href="pages/adobe.html">
-                    <img src="p_image/p_cover/Memento.png" class="img-responsive" alt="" />
-                    <p class='cover_des'>
-                        <b>'Memento' VR</b><br><br>#Virtual Reality #Narration
-                    </p>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 cover ux code">
+          <div class="col-lg-4 col-md-6 cover research design develop">
+            <a href="pages/code.html">
+                <img src="p_image/p_cover/Acorn.png" class="img-responsive" alt="" />
+                <p class='cover_des'>
+                    <b>CLASS VIS</b><br><br>#Data Visualization #Computer Vision
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 cover research">
+            <a href="pages/code.html">
+                <img src="p_image/p_cover/Thermal Comfort.png" class="img-responsive" alt="" />
+                <p class='cover_des'>
+                    <b>Thermal Comfort</b><br><br>#FlameDetection
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 cover design develop">
+            <a href="pages/OSC.html">
+                <img src="p_image/p_cover/OSC.png" class="img-responsive" alt="Hyperreality Museum" />
+                <p class='cover_des'>
+                    <b>Bidirectional Interaction</b><br><br>#OSC #D3
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 cover design develop">
+            <a href="pages/code.html">
+                <img src="p_image/p_cover/Affectiva.png" class="img-responsive" alt="" />
+                <p class='cover_des'>
+                    <b>Emotion Game</b><br><br>#Affective Computing
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 cover design">
+            <a href="pages/code.html">
+                <img src="p_image/p_cover/APP.png" class="img-responsive" alt="" />
+                <p class='cover_des'>
+                    <b>Mobile APP</b><br><br>#App development
+                </p>
+            </a>
+        </div>
+            <div class="col-lg-4 col-md-6 cover design develop">
                 <a href="pages/vis/vis.html">
                     <img src="p_image/p_cover/web_game.png" class="img-responsive" alt="" />
                     <p class='cover_des'>
@@ -130,62 +162,95 @@
                     </p>
                 </a>
             </div>
-            <!-- <div class="col-lg-4 col-md-6 cover ux">
-                <a href="pages/legal.html">
-                    <img src="p_image/p_cover/legal.jpg" class="img-responsive" alt="" />
-                    <p class='cover_des'>
-                        <b>ClariLegal</b><br><br>Facilitating Litigation Services
-                    </p>
-                </a>
-            </div> -->
-            <div class="col-lg-4 col-md-6 cover make ux">
-                <a href="pages/museum.html">
-                    <img src="p_image/p_cover/OSC.png" class="img-responsive" alt="Hyperreality Museum" />
-                    <p class='cover_des'>
-                        <b>Bidirectional Interaction</b><br><br>#OSC #D3
-                    </p>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 cover make">
-                <a href="pages/lighting.html">
-                    <img src="p_image/p_cover/lighting.png" class="img-responsive" alt="" />
-                    <p class='cover_des'>
-                        <b>Lighting Ground</b><br><br>Interactive Lighting Installtion
-                    </p>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 cover make">
-                <a href="pages/timber.html">
-                    <img src="p_image/p_cover/timber.png" class="img-responsive" alt="" />
-                    <p class='cover_des'>
-                        <b>Scripted Timber</b><br><br>Digitalizing Traditional Fabrication
-                    </p>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 cover make">
+            <div class="col-lg-4 col-md-6 cover design">
                 <a href="pages/arch.html">
-                    <img src="p_image/p_cover/arch.jpg" class="img-responsive" alt="" />
+                    <img src="p_image/p_cover/OCEAN.png" class="img-responsive" alt="" />
                     <p class='cover_des'>
-                        <b>Power the Static</b><br><br>Architecture Portfolio
+                        <b>OCEAN Game</b><br><br>#Game Design #CardGame
                     </p>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 cover ux">
+            <div class="col-lg-4 col-md-6 cover design">
                 <a href="pages/nsportc.html">
-                    <img src="p_image/p_cover/nsportc.jpg" class="img-responsive" alt="" />
+                    <img src="p_image/p_cover/Axis Game.png" class="img-responsive" alt="" />
                     <p class='cover_des'>
-                        <b>NSportC</b><br><br>Handling High-school Concussions
+                        <b>Axis Game</b><br><br>#Game Design #BoardGame
                     </p>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 cover code">
+            <div class="col-lg-4 col-md-6 cover research develop">
+                <a href="https://wmjpillow.github.io/CS573.VIS.experiment/">
+                    <img src="p_image/p_cover/GraphicPerception.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Graphic Perception</b><br><br>#Visualization #Chart
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover design develop">
+                <a href="pages/Memento.html">
+                    <img src="p_image/p_cover/Memento.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>'Memento' VR</b><br><br>#Virtual Reality #Narration
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover develop">
                 <a href="pages/code.html">
-                    <img src="p_image/p_cover/code.png" class="img-responsive" alt="" />
+                    <img src="p_image/p_cover/CG.png" class="img-responsive" alt="" />
                     <p class='cover_des'>
-                        <b>Code Collections</b><br><br>Coding Projects since 2016
+                        <b>Computer Graphics</b><br><br>#ComputerGraphics #GLSL
                     </p>
                 </a>
             </div>
+            <div class="col-lg-4 col-md-6 cover develop">
+                <a href="pages/code.html">
+                    <img src="p_image/p_cover/DeepLearning.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Diseases Detection</b><br><br>#Deep Learning #DenseNet
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover develop">
+                <a href="pages/code.html">
+                    <img src="p_image/p_cover/Lindenmayer Systems.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Lindenmayer Systems</b><br><br>#ComputerGraphics #Iterated Function System
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover develop">
+                <a href="pages/code.html">
+                    <img src="p_image/p_cover/GLSL.gif" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Computer Graphics</b><br><br>#ComputerGraphics #GLSL
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover design develop">
+                <a href="pages/InteractiveFiction_RearWindow.html">
+                    <img src="p_image/p_cover/Fiction.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Interactive Fiction</b><br><br>#Interactive Fiction
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover design develop">
+                <a href="pages/code.html">
+                    <img src="p_image/p_cover/Mario.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Live Coding</b><br><br>#Live Coding #Mario Game
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover research design">
+                <a href="pages/code.html">
+                    <img src="p_image/p_cover/Relativity.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Infinite Relativity</b><br><br>#Escher #Perspective Study
+                    </p>
+                </a>
+            </div>
+            
         </div>
     </div>
 
@@ -212,13 +277,16 @@
                 </p>
             </div>
             <h1 style="margin-top:30px; margin-bottom: 40px;font-size:24px;" id="icons">
-              <a href="https://www.linkedin.com/in/jonlichong" target="_blank" style="margin:0 15px; color:rgba(0,0,0,0.7)">
+              <a href="https://www.linkedin.com/in/meijie-wang-38573b113/" target="_blank" style="margin:0 15px; color:rgba(0,0,0,0.7)">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="https://github.com/cli2" target="_blank" style="margin:0 15px; color:rgba(0,0,0,0.7)">
+              <a href="https://medium.com/@wmjpillow" target="_blank" style="margin:0 15px; color:rgba(0,0,0,0.7)">
+                <i class="fa fa-medium" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/wmjpillow" target="_blank" style="margin:0 15px; color:rgba(0,0,0,0.7)">
                   <i class="fa fa-github" aria-hidden="true"></i>
               </a>
-              <a href="https://www.instagram.com/catacil/" target="_blank" style="margin:0 15px; color:rgba(0,0,0,0.7)">
+              <a href="https://www.instagram.com/meijie__wang/" target="_blank" style="margin:0 15px; color:rgba(0,0,0,0.7)">
                   <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </h1>
@@ -228,7 +296,7 @@
 
     <footer style="height:80px; margin-bottom:0px; bottom:0; padding:0 8%;border-top: 1px solid #eee;">
         <p style="text-align:center; font-size:14px; line-height:80px;margin:0; font-family:'Lato', sans-serif;">
-            Design and Code by Chong Li &copy; 2018
+            Copyright &copy; Major
         </p>
     </footer>
 
@@ -271,7 +339,7 @@
             }
             if ($(this).scrollTop() > t && $(this).scrollTop() < t1) {
                 $('#nav-p').css({
-                    "color": "rgb(52,183,143)",
+                    "color": "rgba(0,0,0,0.7)",
                     "font-weight": "400"
                 });
             } else if ($(this).scrollTop() < t) {
@@ -287,7 +355,7 @@
             }
             if ($(this).scrollTop() > t1) {
                 $('#nav-a').css({
-                    "color": "rgb(52,183,143)",
+                    "color": "rgba(0,0,0,0.7)",
                     "font-weight": "400"
                 });
             } else if ($(this).scrollTop() < t) {

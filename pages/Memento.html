@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <title>'Memento' VR</title>
+  <link rel="shortcut icon" href="../p_image/Major_Logo.png">
+  <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Slab:300,400|Ubuntu:300,400" rel="stylesheet">
+  <script src='../p_js/jquery-3.1.1.min.js'></script>
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <script src='../p_js/js.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../p_css/style.css" media="screen" title="no title">
+  <script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-90454244-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+<header class='non-fixed' id='top'>
+  <a href="../index.html">
+    <img class='logo_img' id="logo_img" src="../p_image/Major_logo.png" alt="logo" style=""/>
+  </a>
+  <nav class="nav nav_bread">
+    <a href="#"><img class="bread_img" onclick="show_nav()" src="../p_image/bread.png" alt="nav bread icon" /></a>
+  </nav>
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html#portfolio" id="nav-p">Works</a></li>
+      <li><a href="index.html#about" id="nav-a">Skills</a></li>
+      <li><a href="index.html#about" id="nav-a">Journey</a></li>
+      <li><a href="index.html#about" id="nav-a">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="full" id='full' onclick='show_page()'>
+  <ul>
+    <li><a href="index.html#portfolio">works</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#about" id="nav-a">Journey</a></li>
+    <li><a href="index.html#about" id="nav-a">Resume</a></li>
+  </ul>
+</div>
+
+<!-- Begin of custom code -->
+<section class="title clearfix" style="" >
+  <h1 id="OSC-title">‘Memento' Virtual Reality</h1>
+  <p>Spatial VR Experience</p>
+
+  <div class="embed-dimensions" style="max-width: 900px; max-height: 700px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 57.5%; position: relative; height: 0;">
+      <iframe src="https://player.vimeo.com/video/332832882" id="vid-1" frameborder="0" allowfullscreen style="position:absolute; top:-10; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+    </div>
+  </div>
+</section>
+<section class="page clearfix">
+  <div class="clearfix" style="border-bottom:0.5px solid rgba(0,0,0,0.2);">
+    <div class="col-md-12">
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Tag:</strong> #Virtual Reality #Narration
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Contribution:</strong> Individual Work
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Timeline:</strong> Fall 2013 + 11/2018 + 04/2019
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="page clearfix" style="margin-top:-50px;">
+  <div class="col-md-12">
+    <h1 style="text-align:left;">Concept</h1>
+    <p>
+      The design of this VR Experience is derived from a conceptual architectural design in my second year of undergraduate studies. This concept design was highly evaluated by the teacher at that time. The movie Memento directed by Christopher Nolan adopted unique narration method that positive sequence and flashback interweaving with each other and Finally converge on the turning point of the story. By this means viewer’s perception of time is obscured.
+    </p>
+  </div>
+  <div class="col-sm-12" style="padding:0 10%;">
+    <div class="">
+      <img src="image/Memento/Narration.png" alt="" />
+    </div>
+
+    <p style="text-align:center;">
+      <i>Narration Study in my undergraduate Portfolio: <a href=" https://issuu.com/wmjpillow/docs/portfolio-wangmeijie-2 "><i><U> https://issuu.com/wmjpillow/docs/portfolio-wangmeijie-2</U></i></a></i>
+    </p>
+  </div>
+  <div class="col-md-12">
+   <p>Just as time and space are parallel dimensions, I carefully studied Nolan’s narration method and got Inspiration from it. In the conceptual architecture design, I uniform indoor and outdoor space intertwined, and then organize streamline in indoor and outdoor interwoven topological grid. By this means, viewer’s perception of indoor and outdoor is confused.</p>
+  </div>
+  <div class="col-sm-12" style="padding:0 10%;">
+    <div class="">
+      <img src="image/Memento/Concept.png" alt="" />
+    </div>
+
+    <p style="text-align:center;">
+     <i>Concept Diagram</i>
+    </p>
+  </div>
+</section>
+
+<section class="page clearfix">
+  <h1 style="text-align:left;">Design</h1>
+  <div class="clearfix">
+    <div class="col-md-12">
+      <p><strong>-Space Design:</strong> In order to create a spatial experience in which the interior and exterior spaces are intertwined in the design, I studied the figure-ground relation, and through the method of procedural content generation, I first defined the local indoor and outdoor relationship (corresponding to the local figure-ground relation), and then through the spiral way, I expand the local spatial relationship, and adjust it to form the final indoor and outdoor interlaced space (corresponding to the whole figure-ground relation to form a balance).</p>
+    </div>
+  </div>
+
+  <div class="clearfix" style="margin-top:70px;">
+    <div class="col-sm-12" style="padding:0 10%;">
+      <div class="">
+        <img src="image/Memento/Generation1.png" alt="" />
+      </div>
+      <div class="">
+        <img src="image/Memento/Generation2.png" alt="" />
+      </div>
+
+      <p style="text-align:center;">
+        <i>Generation Diagram</i>
+      </p>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="col-md-12">
+      <p><strong>-VR Design:</strong> There is no doubt that such a conceptual architectural design is basically impossible to have an opportunity to be built. Even if such an interesting spatial experience is realized in the design, it cannot be truly experienced and perceived by people. But VR Technology provides such an opportunity, so I have always had a strong desire to implement such a spatial experience in virtual reality and get feedback from the users’ experience. On the one hand, feedback from users is the best way to judge whether I really realized such a space concept, and on the other hand, I hope that the conceptural architecture that cannot be built could be realized in another way. So in the undergraduate HCI course I took last semester, I implemented Web VR experience with Aframe. But the webVR tool itself has a lot of limitations. One of the big problems is the limitation on the size of the model. I remembered that in the final version with Aframe, I had to trim my model to less than 10M in order to be successfully imported. And the way Aframe links png material in code, etc., also causes a lot of limitations for the final VR experience. So in the final project of this semester, I chose to use the more complex tool Unity to better implement this VR design. I also raised questions about different VR experience with the two platform in the user testing, which I will discuss this later.</p>
+    </div>
+  </div>
+</section>
+
+<section class="page clearfix">
+  <h1 style="text-align:left;">Prototype</h1>
+  <div class="clearfix" style="margin-top:70px;">
+    <div class="col-sm-10" style="padding:0;">
+      <div class="" style="margin-top:0%;">
+        <p class="sm-hide"><strong>A-frame Version:</strong> <a href=" https://hci-project-5.glitch.me "><i><U> https://hci-project-5.glitch.me</U></i></a></p></br> In fact, in the HCI course of the last semester, due to time constraints, our A-frame VR has many problems. For example, how the viewer moves in the VR space, we have not solved this problem in WebVR. So at the time our submitted video is still based on a web browser, through the mouse and keyboard to achieve viewer and perspective movement. However, such a web VR is like a boring Sketchup model for me. </p>
+      </div>
+    </div>
+    <div class="col-md-12" style="max-width: 800px; max-height: 800px; margin: 0 auto;">
+      <div class="col-md-12" style="padding-bottom: 57.5%; height: 0;">
+        <iframe src="https://www.youtube.com/embed/ngu1O1ZCi88?rel=0&amp;controls=0&amp;showinfo=0" id="vid-1" frameborder="0" allowfullscreen style="position:absolute; top:-10; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+        <!--<iframe src="https://www.youtube.com/embed/-RkCu7-ljmQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;" class="embed-content"></iframe>-->
+      </div>
+    </div>
+    <div class="col-md-9">
+      <p style="text-align:center;">
+        <i>11/2018_A-Frame Version</i>
+      </p>
+    </div>
+    <div class="col-sm-10" style="padding:0;">
+      <div class="" style="margin-top:0%;">
+        <p class="sm-hide">In this record video, we can see that when we open this webVR in the phone, we can’t move, we can only experience the space of this view point.</p>
+      </div>
+    </div>
+    <div class="col-md-12" style="max-width: 800px; max-height: 800px; margin: 0 auto;">
+      <div class="col-md-12" style="padding-bottom: 57.5%; height: 0;">
+        <iframe src="https://player.vimeo.com/video/326970414" id="vid-1" frameborder="0" allowfullscreen style="position:absolute; top:-10; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <p style="text-align:center;">
+        <i>03/2019_Mobile Test of A-Frame Version</i>
+      </p>
+    </div>
+    <div class="col-sm-10" style="padding:0;">
+      <div class="" style="margin-top:0%;">
+        <p class="sm-hide"><strong>Unity Version:</strong> </br>  As Unity is a more complex and complete tool, I was first surprised by its real-time rendering capabilities. In the first stage, I did not implement the conversion of the unity scene to the VR of the mobile phone. As you can see in this record video, I solved the problem of moving in the unity scene at first. In fact, I used a Unity package for path.</p>
+      </div>
+    </div>
+    <div class="col-md-12" style="max-width: 800px; max-height: 800px; margin: 0 auto;">
+      <div class="col-md-12" style="padding-bottom: 57.5%; height: 0;">
+        <iframe src="https://www.youtube.com/embed/cZo31m95ZBI?rel=0&amp;controls=0&amp;showinfo=0" id="vid-1" frameborder="0" allowfullscreen style="position:absolute; top:-10; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+        <!--<iframe src="https://www.youtube.com/embed/-RkCu7-ljmQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;" class="embed-content"></iframe>-->
+      </div>
+    </div>
+    <div class="col-md-9">
+      <p style="text-align:center;">
+        <i>03/28/2019_Unity Version</i>
+      </p>
+    </div>
+    <div class="col-sm-10" style="padding:0;">
+      <div class="" style="margin-top:0%;">
+        <p class="sm-hide">Then in this version of April 10th, I used the google cardboard unity VR package, which gave me the method to further install the VR App on mobile phone via xcode. But this test version has a lot of problems, such as the default path movement and google cardboard unity VR package’s conflicts. In this version, the location where users can move in VR is very limited. And the perspective of this version is also very strange, the scene is more distorted than my expectation.</p>
+      </div>
+    </div>
+    <div class="col-md-12" style="max-width: 800px; max-height: 800px; margin: 0 auto;">
+      <div class="col-md-12" style="padding-bottom: 57.5%; height: 0;">
+        <iframe src="https://www.youtube.com/embed/LQf_8dopApY?rel=0&amp;controls=0&amp;showinfo=0" id="vid-1" frameborder="0" allowfullscreen style="position:absolute; top:-10; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+        <!--<iframe src="https://www.youtube.com/embed/-RkCu7-ljmQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;" class="embed-content"></iframe>-->
+      </div>
+    </div>
+    <div class="col-md-9">
+      <p style="text-align:center;">
+        <i>04/10/2019_Unity Version</i>
+      </p>
+    </div>
+    <div class="col-sm-10" style="padding:0;">
+      <div class="" style="margin-top:0%;">
+        <p class="sm-hide">In the version developed on April 20th, you can see from the record video that I have achieved a lot of improvements. The first improvement is about the scene in unity. I re-edited the original sketchup model and adjusted the material imported into unity. Then I add some trees in the unity assets store to the scene. And I also selected the sky package from the assets store and imported it into my unity scene. After repeated adjustments, this version of scene effect has a more virtual reality feeling. What’s more, in this version, I solved the biggest technical problem. I abandoned the use of the unity path package (whose conflict with google cardboard unity VR package can not be resolved), and instead I used the method of binding the camera on object and then presetting the target positions of movement for the object to achieve the movement of viewer in VR experience. On the exported mobile app, the basic way of interaction is to touch the phone screen to decide move or pause of viewer in the scene.</p>
+      </div>
+    </div>
+    <div class="col-md-12" style="max-width: 800px; max-height: 800px; margin: 0 auto;">
+      <div class="col-md-12" style="padding-bottom: 57.5%; height: 0;">
+        <iframe src="https://player.vimeo.com/video/331553531" id="vid-1" frameborder="0" allowfullscreen style="position:absolute; top:-10; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <p style="text-align:center;">
+        <i>04/20/2019_Unity Version</i>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="page clearfix">
+  <h1 style="text-align:left;">Final Product</h1>
+<div class="clearfix" style="margin-top:70px;">
+  <div class="col-sm-6" style="padding:0;">
+    <div class="" style="margin-top:0%;">
+      <p class="sm-hide">
+        In order to make this Unity developed VR App more complete, I made further improvements after the April 20th version. The first improvement is adding a woman with red clothes into the scene, which will bring more fun to the VR experience of users, encountering this mysterious woman with red clothes in different positions. On the other hand, I added the sound into the app. The background music in the previous record video is added later. Adding the environment music directly in the unity developed App can make the users’ experience more immersive. Meanwhile, to make it a complete mobile phone VR APP, I designed a unique logo, the prototype of which comes from Memento’s movie poster. In addition, in order to make a natural transition for the app’s user experience, I added a logo image displaying in black space before the start of the VR scene, and then transitioned to the complete scene and music environment.
+      </p>
+      <p><strong>Github Repository For Final Version Unity Project Assets:</strong> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/wmjpillow/-Memento-Space-VR"><i><U>https://github.com/wmjpillow/-Memento-Space-VR</U></i></a></p>
+      <div>
+        <p><strong>Github Repository For Xcode to build the IOS VR APP:</strong> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/wmjpillow/-Memento-Space-VR-Xcode"><i><U>https://github.com/wmjpillow/-Memento-Space-VR-Xcode</U></i></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" style="padding:0 10%;">
+    <div class="">
+      <img src="image/Memento/APP.png" alt="" />
+    </div>
+  </div>
+  <div class="col-md-12" style="max-width: 1000px; max-height: 1000px; margin: 0 auto;">
+    <div class="col-md-12" style="padding-bottom: 57.5%; height: 0;">
+      <iframe src="https://player.vimeo.com/video/332832882" id="vid-1" frameborder="0" allowfullscreen style="position:absolute; top:-10; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <p style="text-align:center;">
+      <i>04/27/2019_Final Version</i>
+    </p>
+  </div>
+</div>
+</section>
+
+<section class="page clearfix" style="margin-top:-50px;">
+  <div class="col-md-12">
+    <h1 style="text-align:left;">User Testing</h1>
+   <p>
+     After developing it into a complete app, I created a google questionnaire for user testing. On the one hand, this questionnaire is to test whether the original concept of the VR APP is experienced and understood by the users, and on the other hand, I want to compare it with similar independent games to see if there is any possibility to develop the APP further.
+   </p>
+  </div>
+
+  <div class="col-sm-12" style="padding:0 10%;">
+    <div class="">
+      <img src="image/Memento/Q1.png" alt="" />
+    </div>
+    <div class="">
+      <img src="image/Memento/Q2.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<div class="backtotop">
+  <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>
+
+<footer class="end-nav">
+  <a class="previous" href="../index.html#portfolio">
+    <p>
+      < PREV</p>
+    <p class="project">
+      &nbsp;&nbsp;Back to Projects
+    </p>
+  </a>
+  <a class="next" href="lighting.html">
+    <p>NEXT ></p>
+    <p class="project">
+      Lighting Ground&nbsp;&nbsp;
+    </p>
+  </a>
+</footer>
+</body>
+
+</html>
