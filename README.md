@@ -6,6 +6,8 @@ My Medium:  https://medium.com/@wmjpillow
 
 --------------------------------------------------
 
+![GitHub Logo](/self.gif)
+
 I sometimes publish my fun projects on medium. 
 
 And I generally document well on my github repo projects.
