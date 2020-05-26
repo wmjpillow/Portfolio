@@ -404,7 +404,7 @@ div.image-div{
   margin: 20 0px;
 }
 .backtotop a{
-  color: rgba(0,0,0,0.2);
+  color: rgba(255,218,51,1);
   position: fixed;
   right:5vw;
   /* background-color: white; */
@@ -425,23 +425,23 @@ footer.end-nav{
 footer.end-nav .previous{
   width: 50%;
   float: left;
-  padding: 30px 10px;
+  padding: 10px 10px;
 }
 footer.end-nav a{
   opacity: 0.6;
 }
 footer.end-nav a:hover{
   opacity: 1;
-  background-color: rgb(245,244,243);
+  /* background-color: rgb(245,244,243); */
 }
 footer.end-nav .next{
   width: 50%;
   float: right;
   text-align: right;
-  padding: 30px 10px;
+  padding: 10px 10px;
 }
 footer.end-nav p{
-  color: black;
+  color: rgba(255,218,51,1);
   line-height: 60%;
 }
 footer.end-nav .project{
