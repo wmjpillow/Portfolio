@@ -4,6 +4,7 @@ body{
   font-weight: 300;
   align-self: center;
   margin: 0;
+  background:black;
 }
 b{
   font-weight: 400;
@@ -406,7 +407,8 @@ div.image-div{
   color: rgba(0,0,0,0.2);
   position: fixed;
   right:5vw;
-  background-color: white;
+  /* background-color: white; */
+  background-color: black;
   bottom: 100px;
   height: 40px;
   width: 40px;
@@ -876,7 +878,8 @@ footer{
   margin: 0 25px 0 25px;
 }
 #filters li span{
-	color:rgba(0,0,0,0.7);
+  /* color:rgba(0,0,0,0.7); */
+  color:white;
   opacity: 0.8;
 	cursor: pointer;
   padding: 6px;
@@ -885,13 +888,13 @@ footer{
 }
 #filters li span:hover{
   text-decoration:none;
-	color:rgba(0,0,0,0.7);
+	color:rgba(255,218,51,1);
   opacity: 1;
 	cursor: pointer;
 }
 #filters li.active span{
   color:white;
-  background: rgba(0,0,0,0.7);
+  background: rgba(255,218,51,1);
   font-weight: 400;
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
