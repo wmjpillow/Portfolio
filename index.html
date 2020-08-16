@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
-    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3.v3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
@@ -66,6 +66,44 @@
         ga('create', 'UA-90454244-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <!-- <script>
+		var svg = d3.select("body").append("svg")
+		    		.attr("width", 500)
+						.attr("height", 500);
+
+		var line = d3.svg.diagonal();
+
+		var lineData = {source:{x:300, y:0},
+						target:{x:300, y:400}};
+
+		var path = svg.append("path")
+			.attr("d", line(lineData))
+			.style("stroke", "white")
+			.style("fill", "none");
+
+		svg.append("circle")
+			.attr("cx", 25) //Starting x
+			.attr("cy", 25) //Starting y
+			.attr("r", 25)
+      .style("fill", "white")
+			.transition()
+			.delay(250)
+			.duration(1000)
+			.ease("linear")
+			.tween("pathTween", function(){return pathTween(path)})
+			// .tween("pathTween", pathTween); //Custom tween to set the cx and cy attributes
+
+		function pathTween(path){
+			var length = path.node().getTotalLength(); // Get the length of the path
+			var r = d3.interpolate(0, length); //Set up interpolation from 0 to the path length
+			return function(t){
+				var point = path.node().getPointAtLength(r(t)); // Get the next point along the path
+				d3.select(this) // Select the circle
+					.attr("cx", point.x) // Set the cx
+					.attr("cy", point.y) // Set the cy
+			}
+		}
+	</script> -->
 </head>
 
 <body>
@@ -94,13 +132,8 @@
         </ul>
     </div>
     <div class="blue" id="title">
-          <p class="me" style="text-align:center; margin-top:150px;"><img src="image/self.gif" alt="picture" /></p>
-          <!-- <p style="text-align:center;"> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; > > > > > > > > > > </p>
-          <p style="text-align:center;"> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; > > > > > > > ></p>
-          <p style="text-align:center;"> &nbsp; &nbsp;&nbsp; &nbsp;  > > > > > > >  </p> -->
-          <!-- <p style="text-align:center;"> > > > > ></p> -->
-          <!-- <p style="text-align:center;"> > > > ></p>
-          <p style="text-align:center;"> > > > ></p> -->
+          <p class="me" style="text-align:center; margin-top:100px;"><img src="image/self.gif" alt="picture" /></p>
+          <p class="me" style="text-align:center; margin-top:0px;"><img src="image/move.gif" alt="picture" /></p>
     </div>
     <div>
         <section class="clearfix" id="portfolio">
