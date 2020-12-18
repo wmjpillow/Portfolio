@@ -74,44 +74,6 @@
         ga('create', 'UA-90454244-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <!-- <script>
-		var svg = d3.select("body").append("svg")
-		    		.attr("width", 500)
-						.attr("height", 500);
-
-		var line = d3.svg.diagonal();
-
-		var lineData = {source:{x:300, y:0},
-						target:{x:300, y:400}};
-
-		var path = svg.append("path")
-			.attr("d", line(lineData))
-			.style("stroke", "white")
-			.style("fill", "none");
-
-		svg.append("circle")
-			.attr("cx", 25) //Starting x
-			.attr("cy", 25) //Starting y
-			.attr("r", 25)
-      .style("fill", "white")
-			.transition()
-			.delay(250)
-			.duration(1000)
-			.ease("linear")
-			.tween("pathTween", function(){return pathTween(path)})
-			// .tween("pathTween", pathTween); //Custom tween to set the cx and cy attributes
-
-		function pathTween(path){
-			var length = path.node().getTotalLength(); // Get the length of the path
-			var r = d3.interpolate(0, length); //Set up interpolation from 0 to the path length
-			return function(t){
-				var point = path.node().getPointAtLength(r(t)); // Get the next point along the path
-				d3.select(this) // Select the circle
-					.attr("cx", point.x) // Set the cx
-					.attr("cy", point.y) // Set the cy
-			}
-		}
-	</script> -->
 </head>
 
 <body>
@@ -201,6 +163,17 @@
                     </p>
                 </a>
             </div>
+
+            <div target="_blank" rel="noopener noreferrer" class="col-lg-4 col-md-6 cover develop">
+                <a href="pages/disease.html">
+                    <img src="image/cover/DeepLearning.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Deep Learning Diseases Detection</b>
+                        <!-- <br>#Deep Learning #DenseNet<br> -->
+                    </p>
+                </a>
+            </div>
+
             <div class="col-lg-4 col-md-6 cover design develop">
                 <a href="pages/Metro.html">
                     <img src="image/cover/SHMetro.gif" class="img-responsive" alt="" />
@@ -220,15 +193,7 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 cover fun develop">
-                <a href="pages/OSC.html">
-                    <img src="image/cover/OSC.png" class="img-responsive" alt="Hyperreality Museum" />
-                    <p class='cover_des'>
-                        <b>Bidirectional Interaction</b>
-                        <!-- <br>#OSC #D3<br> -->
-                    </p>
-                </a>
-            </div>
+
 
             <div class="col-lg-4 col-md-6 cover design develop">
                 <a href="pages/Memento.html">
@@ -249,15 +214,16 @@
                     </p>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 cover design develop">
-                <a href="pages/nod.html">
-                    <img src="image/cover/nod.png" class="img-responsive" alt="" />
+            <div class="col-lg-4 col-md-6 cover fun develop">
+                <a href="pages/OSC.html">
+                    <img src="image/cover/OSC.png" class="img-responsive" alt="Hyperreality Museum" />
                     <p class='cover_des'>
-                        <b>Nod App</b>
-                        <!-- <br>#Full stack Dev<br> -->
+                        <b>Bidirectional Interaction</b>
+                        <!-- <br>#OSC #D3<br> -->
                     </p>
                 </a>
             </div>
+
  
             <div class="col-lg-4 col-md-6 cover develop">
                 <a href="pages/garden.html">
@@ -274,6 +240,15 @@
                     <p class='cover_des'>
                         <b>Mandelbrot Fractal</b>
                         <!-- <br>#ComputerGraphics #GLSL<br> -->
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 cover design develop">
+                <a href="pages/nod.html">
+                    <img src="image/cover/nod.png" class="img-responsive" alt="" />
+                    <p class='cover_des'>
+                        <b>Nod App</b>
+                        <!-- <br>#Full stack Dev<br> -->
                     </p>
                 </a>
             </div>
@@ -298,15 +273,7 @@
                 </a>
             </div>
 
-            <div target="_blank" rel="noopener noreferrer" class="col-lg-4 col-md-6 cover develop">
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/wmjpillow/DiseasesDetection-On-ChestXRays-With-DeepLearning">
-                    <img src="image/cover/DeepLearning.png" class="img-responsive" alt="" />
-                    <p class='cover_des'>
-                        <b>Diseases Detection</b>
-                        <!-- <br>#Deep Learning #DenseNet<br> -->
-                    </p>
-                </a>
-            </div>
+
             <div class="col-lg-4 col-md-6 cover fun develop">
                 <a href="pages/mario.html">
                     <img src="image/cover/Mario.png" class="img-responsive" alt="" />
@@ -335,15 +302,6 @@
                 </p>
             </a>
         </div>
-
-        <!-- <div class="col-lg-4 col-md-6 cover design develop">
-            <a href="pages/InteractiveFiction_RearWindow.html">
-                <img src="image/cover/Affectiva.png" class="img-responsive" alt="" />
-                <p class='cover_des'>
-                    <b>Emotion Game</b><br><br>#Affective Computing
-                </p>
-            </a>
-        </div> -->
 
         <div class="col-lg-4 col-md-6 cover develop">
             <a href="pages/Lindenmayer.html">
@@ -527,3 +485,4 @@
 </body>
 
 </html>
+
